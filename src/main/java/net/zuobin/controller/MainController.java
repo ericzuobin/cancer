@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 16/7/14
  */
 @RestController
+@RequestMapping("/")
 public class MainController {
 
     @RequestMapping("/")
