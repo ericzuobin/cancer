@@ -35,13 +35,22 @@
 
     <!--maven的插件-->
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**</include>
+                    <include>**/**</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-
         <!-- 配置java版本 不配置的话默认父类配置的是1.6-->
         <pluginManagement>
             <plugins>
@@ -54,6 +63,9 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <defaultGoal>install</defaultGoal>
+        <directory>${project.basedir}/target</directory>
+        <finalName>${project.artifactId}</finalName>
     </build>
 
 </project>
