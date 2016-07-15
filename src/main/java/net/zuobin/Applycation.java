@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
+//@SpringbootApplication 等同于@Configuration,@EnableAutoConfiguration和 @ComponentScan 并具有他们的默认属性值。
 public class Applycation {
 
     public static void main(String[] args) {
