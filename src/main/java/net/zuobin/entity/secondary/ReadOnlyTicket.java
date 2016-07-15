@@ -16,7 +16,7 @@ import java.util.Date;
 @Table(name = "ticket")
 @DynamicInsert
 @DynamicUpdate
-public class Ticket implements Serializable {
+public class ReadOnlyTicket implements Serializable {
 
     private static final long serialVersionUID = -2671671464768914884L;
 
