@@ -1,5 +1,6 @@
-package net.zuobin.config;
+package net.zuobin.config.database;
 
+import net.zuobin.config.DataSourceConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
