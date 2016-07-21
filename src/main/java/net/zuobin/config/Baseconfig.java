@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Import;
  * @date 16/7/14
  */
 @Configuration
-@Import({JPAconfig.class})
+@Import({JPAconfig.class,MongoConfig.class})
 public class Baseconfig {
 }
