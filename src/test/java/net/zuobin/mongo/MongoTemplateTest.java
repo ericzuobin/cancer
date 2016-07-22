@@ -2,7 +2,6 @@ package net.zuobin.mongo;
 
 import net.zuobin.Applycation;
 import net.zuobin.dao.mongo.ticket.TicketMongoDao;
-import net.zuobin.entity.mongo.Ticket;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,17 +35,6 @@ public class MongoTemplateTest {
 
     @Test
     public void save() throws Exception {
-
-        System.out.println(ticketTemplate.getCollection("ticket").count());
-
-        System.out.println(logTemplate.getCollection("log"));
-
-        Ticket t = new Ticket();
-        t.setContent("111");
-        t.setOrderId("11111");
-
-        ticketMongoDao.insert(t);
-        System.out.println(ticketMongoDao.count());
 
     }
 
